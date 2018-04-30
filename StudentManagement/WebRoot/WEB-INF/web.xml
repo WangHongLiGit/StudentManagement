@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<filter>
+	<filter-name>LoginFIlter</filter-name>
+	<filter-class>Filter.LoginFIlter</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>LoginFIlter</filter-name>
+	<url-pattern>/jsp/*</url-pattern>
+</filter-mapping>
+
+<servlet>
+	<servlet-name>TQueryClassServlet</servlet-name>
+	<servlet-class>Controler.TQueryClassServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>TQueryClassServlet</servlet-name>
+	<url-pattern>/TQueryClassServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>Controler.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>TAddServlet</servlet-name>
+	<servlet-class>Controler.TAddServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>TAddServlet</servlet-name>
+	<url-pattern>/TAddServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>TQuerySingleServlet</servlet-name>
+	<servlet-class>Controler.TQuerySingleServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>TQuerySingleServlet</servlet-name>
+	<url-pattern>/TQuerySingleServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>TUpdateServlet</servlet-name>
+	<servlet-class>Controler.TUpdateServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>TUpdateServlet</servlet-name>
+	<url-pattern>/TUpdateServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>TDeleteServlet</servlet-name>
+	<servlet-class>Controler.TDeleteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>TDeleteServlet</servlet-name>
+	<url-pattern>/TDeleteServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>TMonitorServlet</servlet-name>
+	<servlet-class>Controler.TMonitorServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>TMonitorServlet</servlet-name>
+	<url-pattern>/TMonitorServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>MQueryClassServlet</servlet-name>
+	<servlet-class>Controler.MQueryClassServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>MQueryClassServlet</servlet-name>
+	<url-pattern>/MQueryClassServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>GQueryClassServlet</servlet-name>
+	<servlet-class>Controler.GQueryClassServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>GQueryClassServlet</servlet-name>
+	<url-pattern>/GQueryClassServlet</url-pattern>
+</servlet-mapping>
+</web-app>
